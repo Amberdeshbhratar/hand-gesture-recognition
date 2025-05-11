@@ -1,4 +1,4 @@
-# Hand Gesture Recognition
+# 🖐️ Real-Time Hand Gesture Recognition App
 
 **This project provides a real-time hand gesture recognition system using a webcam, TensorFlow, MediaPipe, and a Flask web server. It detects hand gestures and classifies them into predefined actions using a trained deep learning model.
 
