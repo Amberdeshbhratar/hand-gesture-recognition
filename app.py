@@ -107,4 +107,4 @@ def get_result():
     return jsonify({'result': result})
 
 if __name__ == '__main__':
-    app.run(host='localhost', port=3000, debug=True)
+    app.run(port=3000)
