@@ -2,26 +2,52 @@
 <html lang="en">
 <head>
     <title>Hand Gesture Recognition</title>
-    <style>
-        #container { display: flex; }
-        #video { margin-right: 30px; }
-        #result-box { font-size: 2em; margin-top: 30px; }
-        button { font-size: 1.2em; margin: 10px; }
-    </style>
+    <link rel="stylesheet" href="static\styles.css">
+
 </head>
 <body>
     <h1>Hand Gesture Recognition</h1>
     <div id="container">
-        <div id="video">
-            <img src="{{ url_for('video_feed') }}" width="640" />
-            <div>
-                <button id="start-btn">Start Recording</button>
-                <button id="stop-btn">Stop Recording</button>
+        <div>
+            <div id="video">
+                <img src="{{ url_for('video_feed') }}" width="640" />
+                <div>
+                    <button id="start-btn">Start</button>
+                    <button id="stop-btn">Stop</button>
+                </div>
+            </div>
+            <div id="result-box">
+                <strong>Prediction:</strong>
+                <span id="prediction">-</span>
             </div>
         </div>
-        <div id="result-box">
-            <strong>Prediction:</strong>
-            <span id="prediction">-</span>
+        <div id="gesture-images">
+            <div class="gesture-row">
+                <div>
+                    <div class="gesture-label">Hello</div>
+                    <img class="gesture-img" src="static/images/hello.avif" alt="Hello Gesture">
+                </div>
+                <div>
+                    <div class="gesture-label">All The Best</div>
+                    <img class="gesture-img" src="static/images/allthebest.jpg" alt="All The Best Gesture">
+                </div>
+            </div>
+            <div class="gesture-row">
+                <div>
+                    <div class="gesture-label">Peace</div>
+                    <img class="gesture-img" src="static/images/peace.jpg" alt="Peace Gesture">
+                </div>
+                <div>
+                    <div class="gesture-label">Call Me</div>
+                    <img class="gesture-img" src="static/images/callme.jpg" alt="Call Me Gesture">
+                </div>
+            </div>
+            <div class="gesture-row center">
+                <div>
+                    <div class="gesture-label">Nice</div>
+                    <img class="gesture-img" src="static/images/nice.jpg" alt="Nice Gesture">
+                </div>
+            </div>
         </div>
     </div>
     <script>

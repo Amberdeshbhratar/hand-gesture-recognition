@@ -7,9 +7,9 @@ import threading
 
 app = Flask(__name__)
 
-actions = np.array(['hello', 'AllTheBest', 'peace'])
+actions = np.array(['Hello', 'All The Best', 'Peace', 'Call me', 'Nice'])
 model = Sequential()
-model.add(load_model('action2.h5'))
+model.add(load_model('actions.h5'))
 
 mp_drawing = mp.solutions.drawing_utils
 mp_holistic = mp.solutions.holistic
@@ -107,4 +107,4 @@ def get_result():
     return jsonify({'result': result})
 
 if __name__ == '__main__':
-    app.run(host='localhost', port=3000, debug=True)
+    app.run(port=3000)

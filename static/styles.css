@@ -1,0 +1,43 @@
+#container {
+    display: flex;
+}
+#video {
+    margin-right: 30px;
+}
+#result-box {
+    font-size: 2em;
+    margin-top: 30px;
+}
+button {
+    font-size: 1.2em;
+    margin: 10px;
+}
+#gesture-images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 30px;
+}
+.gesture-row {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 10px;
+}
+.gesture-img {
+    width: 150px;
+    margin-bottom: 5px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    background: #f7f7f7;
+    padding: 5px;
+}
+.gesture-label {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+/* Center the single image in the last row */
+.gesture-row.center {
+    justify-content: center;
+}

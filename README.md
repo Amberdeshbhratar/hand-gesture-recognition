@@ -13,7 +13,7 @@
 ## 📂 Project Structure
 
 ├── app.py                          # Flask application for live inference<br>
-├── action2.h5                      # Trained Keras model for gesture classification<br>
+├── action.h5                      # Trained Keras model for gesture classification<br>
 ├── HandGestureRealTime_Train.ipynb# Notebook for training the model<br>
 ├── HandGestureRealTime_Test.ipynb # Notebook for testing the model<br>
 ├── templates/<br>
@@ -44,10 +44,10 @@ Use the buttons on the frontend (index.html) to start and stop recording. The sy
 - /result: Returns the most recent gesture prediction.
   
 ## 📓 Notebooks
-HandGestureRealTime_Train.ipynb: Used to collect and train gesture data into action2.h5.
+HandGestureRealTime_Train.ipynb: Used to collect and train gesture data into actions.h5.
 HandGestureRealTime_Test.ipynb: For testing the model on collected sequences.
 
 ## 🧪 Model Details
-Model Type: Sequential (loaded from action2.h5)
+Model Type: Sequential (loaded from actions.h5)
 Input: 30-frame sequences of hand landmarks (left + right hands)
 Output: Softmax prediction over predefined classes
